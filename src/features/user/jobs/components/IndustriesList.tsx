@@ -1,7 +1,6 @@
 import React from "react";
 import { Chip } from "@mantine/core";
 import { IndustriesListProps } from "../../../../interface/interface";
-import { ScrollArea, Box } from "@mantine/core";
 
 const IndustriesList: React.FC<IndustriesListProps> = (props) => {
   const { industry } = props;

@@ -7,3 +7,12 @@
     @apply font-geist;
   }
 }
+
+/* Drawer Component */
+section.mantine-Drawer-content {
+  overflow: hidden;
+}
+
+div.mantine-Drawer-body {
+  padding: 0;
+}

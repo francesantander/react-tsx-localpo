@@ -4,7 +4,7 @@ import FindJobInput from "../../../../components/FindJobInput";
 
 const Hero: React.FC = () => {
   return (
-    <div className="w-full flex flex-col justify-center h-screen lg:max-w-[85rem] mx-auto px-4 lg:pt-7">
+    <div className="w-full flex flex-col justify-center h-screen lg:pt-7">
       <div className="grid grid-cols gap-y-10">
         <div className="grid grid-cols gap-y-4">
           <h1 className="text-4xl text-textBlack font-black max-w-[46rem] lg:text-6xl lg:leading-tight">

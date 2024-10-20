@@ -1,11 +1,11 @@
 import React from "react";
 import IndustriesList from "./components/IndustriesList";
-import { ScrollArea, Button, Divider, Select } from "@mantine/core";
+import { ScrollArea } from "@mantine/core";
 import FindJobInput from "../../../components/FindJobInput";
 import FilterMobile from "./components/FilterMobile";
 import JobFilter from "./components/JobFilter";
-import JobContainer from "./components/JobContainer";
 import JobList from "./components/JobList";
+import jobData from "../../../data/jobs.json";
 
 const JobsSection: React.FC = () => {
   const industriesData = [
@@ -35,27 +35,13 @@ const JobsSection: React.FC = () => {
     },
   ];
 
-  const jobData = [
-    {
-      img: "",
-      title: "Senior Software Engineer",
-      company: "FutureTech Corp.",
-      location: "BGC - Manila",
-      type: "Full-time",
-      experience: "6-8 experience",
-      salary: "80,000-100,000",
-      description: [
-        "Create user-centered design solutions that meet business goals and user needs, ensuring a seamless and enjoyable user experience.",
-        "Develop wireframes, prototypes, and high-fidelity mockups to effectively communicate design ideas to stakeholders and development teams.",
-      ],
-    },
-  ];
-
   return (
     <div className="w-full h-full bg-bgColor">
-      <div className="w-full lg:max-w-[85rem] mx-auto px-4 lg:pt-7">
+      <div className="w-full lg:pt-7">
         <div className="text-center grid grid-cols gap-y-3">
-          <h1 className="text-textBlack font-bold text-4xl">Jobs section</h1>
+          <h1 className="text-textBlack font-bold text-4xl">
+            Explore Our Featured Jobs Section
+          </h1>
           <p className="text-textGray max-w-2xl mx-auto">
             Discover top opportunities across industries. Search by category or
             explore our latest job listings to find your next career move.
@@ -76,16 +62,21 @@ const JobsSection: React.FC = () => {
           </ScrollArea>
           {/* <FilterMobile /> */}
         </div>
-        <div className="grid grid-cols-5 grid-rows-6 gap-4 py-10">
-          <div className="row-span-6 border border-neutral-300 rounded-md bg-white">
+        <div className="lg:grid lg:grid-cols-5 lg:grid-rows-6 lg:gap-4 lg:py-10">
+          <div className="lg:row-span-6 lg:border lg:border-neutral-300 lg:rounded-md lg:bg-white">
             <JobFilter />
           </div>
-          <div className="col-span-4 row-span-5">
+          <div className="mt-4 lg:mt-0 lg:col-span-4 lg:row-span-6 h-full">
             <FindJobInput />
-            <div className="w-full border border-neutral-200 rounded-md">
-              {jobData.map((job, index) => (
-                <JobList job={job} key={index} />
-              ))}
+            {/* <FilterMobile /> */}
+            <div className="w-full mt-3">
+              <ScrollArea h={570} scrollbarSize={8}>
+                <div className="grid grid-cols gap-y-3">
+                  {jobData.map((job, index) => (
+                    <JobList job={job} key={index} />
+                  ))}
+                </div>
+              </ScrollArea>
             </div>
           </div>
         </div>
