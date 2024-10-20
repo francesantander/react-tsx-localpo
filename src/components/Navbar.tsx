@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../../../assets/relume.svg";
+import Logo from "../assets/relume.svg";
 import { useDisclosure } from "@mantine/hooks";
 import { Burger, Button, Drawer } from "@mantine/core";
 import { Link } from "react-router-dom";

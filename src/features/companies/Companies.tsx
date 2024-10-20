@@ -4,7 +4,7 @@ import CompanyList from "./components/CompanyList";
 
 const Companies: React.FC = () => {
   return (
-    <div className="py-20">
+    <div className="py-20 px-4">
       <div className="grid grid-cols gap-y-4 text-center">
         <h1 className="text-textBlack font-bold text-4xl">
           Top Companies Hiring

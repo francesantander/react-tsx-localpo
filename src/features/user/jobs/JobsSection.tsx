@@ -37,7 +37,7 @@ const JobsSection: React.FC = () => {
 
   return (
     <div className="w-full h-full bg-bgColor">
-      <div className="w-full lg:pt-7">
+      <div className="w-full lg:pt-7 px-4">
         <div className="text-center grid grid-cols gap-y-3">
           <h1 className="text-textBlack font-bold text-4xl">
             Explore Our Featured Jobs Section

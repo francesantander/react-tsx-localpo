@@ -6,7 +6,7 @@ import { BenefitsProps } from "../../../interface/interface";
 const Benefits: React.FC<BenefitsProps> = () => {
   return (
     <>
-      <div className="pb-20">
+      <div className="pb-20 px-4">
         <div className="grid grid-cols gap-y-3">
           <h3 className="text-textGray">Tagline</h3>
           <h1 className="text-textBlack font-black text-4xl max-w-2xl leading-tight">
@@ -21,7 +21,7 @@ const Benefits: React.FC<BenefitsProps> = () => {
             recruitment efforts.
           </p>
         </div>
-        <div className="grid grid-cols gap-y-6 pt-10 md:grid-cols-3">
+        <div className="grid grid-cols gap-y-6 pt-10 md:grid-cols-3 md:pt-20 md:gap-x-10">
           {benefitsData.map((benefit, index) => (
             <BenefitList benefit={benefit} key={index} />
           ))}
