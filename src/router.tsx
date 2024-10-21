@@ -3,6 +3,7 @@ import NotFound from "./pages/notfound/NotFound";
 import GuestLayout from "./container/user/GuestLayout";
 import Home from "./pages/user/Home";
 import FindJob from "./pages/user/FindJob";
+import PostAJob from "./pages/user/PostAJob";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/find-job",
         element: <FindJob />,
+      },
+      {
+        path: "/post-job",
+        element: <PostAJob />,
       },
     ],
   },
