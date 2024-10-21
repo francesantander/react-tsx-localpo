@@ -1,9 +1,8 @@
 import React from "react";
 import benefitsData from "../../../data/benefits.json";
 import BenefitList from "./components/BenefitList";
-import { BenefitsProps } from "../../../interface/interface";
 
-const Benefits: React.FC<BenefitsProps> = () => {
+const Benefits: React.FC = () => {
   return (
     <>
       <div className="pb-20 px-4">

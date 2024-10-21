@@ -1,9 +1,9 @@
 import React from "react";
 import Hero from "./components/Hero";
 import JobsSection from "../jobs/JobsSection";
-import Companies from "../../companies/Companies";
+import Companies from "../companies/Companies";
 import Benefits from "../benefits/Benefits";
-import CtaSection from "../../ctasection/CtaSection";
+import CtaSection from "../ctasection/CtaSection";
 
 const Home: React.FC = () => {
   return (

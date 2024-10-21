@@ -39,7 +39,6 @@ export interface JobListProps {
 
 export interface BenefitsProps {
   benefit: {
-    img: string;
     icon: string;
     title: string;
     description: string;

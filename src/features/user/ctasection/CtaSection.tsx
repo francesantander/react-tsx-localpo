@@ -1,5 +1,5 @@
 import { Button, Overlay } from "@mantine/core";
-import classes from "../../assets/ctasection.module.css";
+import classes from "../../../assets/ctasection.module.css";
 import React from "react";
 
 const CtaSection: React.FC = () => {

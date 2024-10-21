@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
       title: "Home",
     },
     {
-      path: "/find-jobs",
+      path: "/find-job",
       title: "Find Jobs",
     },
     {

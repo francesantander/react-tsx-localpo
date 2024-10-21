@@ -1,11 +1,7 @@
 import React from "react";
 import IndustriesList from "./components/IndustriesList";
 import { ScrollArea } from "@mantine/core";
-import FindJobInput from "../../../components/FindJobInput";
-import FilterMobile from "./components/FilterMobile";
-import JobFilter from "./components/JobFilter";
-import JobList from "./components/JobList";
-import jobData from "../../../data/jobs.json";
+import SearchJob from "../../../components/SearchJob";
 
 const JobsSection: React.FC = () => {
   const industriesData = [
@@ -62,24 +58,7 @@ const JobsSection: React.FC = () => {
           </ScrollArea>
           {/* <FilterMobile /> */}
         </div>
-        <div className="lg:grid lg:grid-cols-5 lg:grid-rows-6 lg:gap-4 lg:py-10">
-          <div className="lg:row-span-6 lg:border lg:border-neutral-300 lg:rounded-md lg:bg-white">
-            <JobFilter />
-          </div>
-          <div className="mt-4 lg:mt-0 lg:col-span-4 lg:row-span-6 h-full">
-            <FindJobInput />
-            {/* <FilterMobile /> */}
-            <div className="w-full mt-3">
-              <ScrollArea h={570} scrollbarSize={8}>
-                <div className="grid grid-cols gap-y-3">
-                  {jobData.map((job, index) => (
-                    <JobList job={job} key={index} />
-                  ))}
-                </div>
-              </ScrollArea>
-            </div>
-          </div>
-        </div>
+        <SearchJob />
       </div>
     </div>
   );

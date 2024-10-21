@@ -1,5 +1,5 @@
 import React from "react";
-import companies from "../../data/company.json";
+import companies from "../../../data/company.json";
 import CompanyList from "./components/CompanyList";
 
 const Companies: React.FC = () => {
