@@ -4,6 +4,7 @@ import GuestLayout from "./container/user/GuestLayout";
 import Home from "./pages/user/Home";
 import FindJob from "./pages/user/FindJob";
 import PostAJob from "./pages/user/PostAJob";
+import AboutUs from "./pages/user/AboutUs";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/post-job",
         element: <PostAJob />,
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs />,
       },
     ],
   },
