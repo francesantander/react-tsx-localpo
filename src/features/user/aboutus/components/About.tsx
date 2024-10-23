@@ -4,9 +4,9 @@ const About: React.FC = () => {
   return (
     <>
       <div>
-        <div className="h-full py-32 grid grid-cols-2">
-          <div>
-            <div className="grid grid-cols">
+        <div className="h-full py-32 grid md:grid-cols-[1.3fr_1fr]">
+          <div className="grid grid-cols gap-y-14">
+            <div className="grid grid-cols gap-y-4">
               <h1 className="font-bold text-textBlack text-4xl">
                 Connecting Talent with Opportunities: Your Gateway to Career
                 Success
@@ -18,12 +18,12 @@ const About: React.FC = () => {
                 talent effortlessly.
               </p>
             </div>
-            <div className="flex gap-x-3">
-              <div>
-                <h1 className="font-bold text-textBlack text-2xl">
+            <div className="flex flex-col gap-y-10 md:flex-row gap-x-4">
+              <div className="grid grid-cols gap-y-3">
+                <h1 className="font-bold text-textBlack text-2xl md:text-xl">
                   Our Mission
                 </h1>
-                <p className="text-textGray">
+                <p className="text-textGray text-sm">
                   Our mission is to simplify hiring and job searching by
                   providing an intuitive platform that empowers both employers
                   and candidates. We are dedicated to creating a job market that
@@ -31,11 +31,11 @@ const About: React.FC = () => {
                   seamlessly.
                 </p>
               </div>
-              <div>
-                <h1 className="font-bold text-textBlack text-2xl">
+              <div className="grid grid-cols gap-y-3">
+                <h1 className="font-bold text-textBlack text-2xl md:text-xl">
                   Why Choose Us
                 </h1>
-                <p className="text-textGray">
+                <p className="text-textGray text-sm">
                   We provide an unparalleled job search experience through our
                   user-friendly platform, trusted by thousands of companies and
                   job seekers alike. With powerful tools for both employers and
