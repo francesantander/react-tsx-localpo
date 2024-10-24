@@ -1,15 +1,20 @@
+import { Image } from "@mantine/core";
 import React from "react";
 
 const SuccessNumbers: React.FC = () => {
   return (
     <>
-      <div className="h-full pb-20">
-        <div className="grid grid-cols-2">
+      <div>
+        <div className="grid gap-y-10 md:grid-cols-2 md:gap-x-10">
           <div>
-            <img src="" alt="" />
+            <Image
+              h="100%"
+              radius="md"
+              src="https://images.pexels.com/photos/5673488/pexels-photo-5673488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
           </div>
-          <div className="grid grid-cols gap-y-7">
-            <div>
+          <div className="grid grid-cols gap-y-7 md:gap-y-3">
+            <div className="grid grid-cols gap-y-3">
               <h1 className="font-bold text-3xl text-textBlack">
                 Our Success by the Numbers
               </h1>
@@ -22,15 +27,15 @@ const SuccessNumbers: React.FC = () => {
                 effortlessly.
               </p>
             </div>
-            <div className="grid grid-cols-2">
-              <div className="grid grid-cols gap-y-4">
+            <div className="grid gap-y-9 md:grid-cols-2 md:gap-x-10 md:justify-between">
+              <div className="grid grid-cols gap-y-4 md:gap-y-2">
                 <h1 className="text-textBlack text-4xl font-black">97%</h1>
                 <p className="text-textGray">
                   of job seekers who apply through our platform get contacted by
                   employers within the first 7 days.
                 </p>
               </div>
-              <div className="grid grid-cols gap-y-4">
+              <div className="grid grid-cols gap-y-4 md:gap-y-2">
                 <h1 className="text-textBlack text-4xl font-black">85%</h1>
                 <p className="text-textGray">
                   of job postings result in interviews within the first 2 weeks.

@@ -1,12 +1,13 @@
+import { Image } from "@mantine/core";
 import React from "react";
 
 const About: React.FC = () => {
   return (
     <>
       <div>
-        <div className="h-full py-32 grid md:grid-cols-[1.3fr_1fr]">
-          <div className="grid grid-cols gap-y-14">
-            <div className="grid grid-cols gap-y-4">
+        <div className="grid gap-y-10 md:grid-cols-[1.2fr_1fr] md:gap-x-14">
+          <div className="grid grid-cols gap-y-10">
+            <div className="grid grid-cols gap-y-6">
               <h1 className="font-bold text-textBlack text-4xl">
                 Connecting Talent with Opportunities: Your Gateway to Career
                 Success
@@ -18,7 +19,7 @@ const About: React.FC = () => {
                 talent effortlessly.
               </p>
             </div>
-            <div className="flex flex-col gap-y-10 md:flex-row gap-x-4">
+            <div className="flex flex-col gap-y-10 md:flex-row md:justify-between gap-x-10">
               <div className="grid grid-cols gap-y-3">
                 <h1 className="font-bold text-textBlack text-2xl md:text-xl">
                   Our Mission
@@ -45,8 +46,14 @@ const About: React.FC = () => {
               </div>
             </div>
           </div>
+          <div className="h-full">
+            <Image
+              radius="md"
+              h="100%"
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+          </div>
         </div>
-        <div></div>
       </div>
     </>
   );

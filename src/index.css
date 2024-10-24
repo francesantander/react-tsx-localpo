@@ -8,6 +8,13 @@
   }
 }
 
+div#guestLayout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #e4e4e7;
+}
+
 /* Drawer Component */
 section.mantine-Drawer-content {
   overflow: hidden;

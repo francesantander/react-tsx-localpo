@@ -92,7 +92,7 @@ export const Footer: React.FC = () => {
 
   return (
     <>
-      <footer className="py-20 bg-[#2D2727] grid grid-cols items-center gap-y-9 px-4">
+      <footer className="py-20 bg-[#2D2727] grid grid-cols items-center gap-y-9 px-4 mt-auto">
         <div className="md:grid md:grid-cols-2 md:gap-x-2">
           <div className="grid grid-cols gap-y-3 justify-center text-center text-white md:justify-start md:text-left">
             <div className="flex items-center gap-x-2 justify-center md:justify-start">
